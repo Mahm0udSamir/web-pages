@@ -1,0 +1,53 @@
+
+
+.parent{
+    margin-top: 84px;
+    width: 100%
+
+}
+/*.info span{
+    color: red;
+    float: right;
+    margin:-12px;
+    margin-top: -38px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px
+}*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+th, td {
+    width: 16.66666%;
+    text-align: left;
+    padding: 8px;
+    background-color:rgba(248, 248, 249, 0.95);
+
+}
+
+
+
+th {
+    background-color: rgba(0, 0, 0, 0.52);
+    color: white;
+    text-align: center;
+}
+.edit{
+     border-radius: 6px;
+    padding: 8px;
+    font-weight: bold;
+    margin: 2px;
+    margin-left: 6px;
+    width: 66px;
+    color:#e9e9ef;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0;
+}
+.edit:hover{
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    color: #FFF;
+}

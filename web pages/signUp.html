@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+     <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+    <style>
+      body{
+        background-image: url(images/back3.jpg)
+        }
+    </style>
+</head>
+<body>
+    
+<!--start navbar-->
+<div class=" nav navbar">
+   
+       <p class="logo lg">
+        <span class="a">D</span>
+        <span class="b">E</span>
+        <span class="a">S</span>
+        <span class="b">I</span>
+        <span class="a">G</span>
+        <span class="b">N</span>
+       
+    </p>
+       <ul>
+            <li ><a href="index.html">HOME</a></li>
+            <li class="active"><a href="signUp.html">SIGN UP</a></li>
+            <li><a href="about.html">INFO</a></li>
+            <li><a href="galary.html">GALARY</a></li>
+            
+       </ul>
+   
+</div>
+<!--end navbar-->   
+    
+<div>
+    
+        <form class="container form" method="get" action="about.html" onsubmit='return validation()'>
+            <h2>Sign Up</h2>
+
+            <div>
+                <label>Name :</label> <input name='name' type="text">
+            </div>
+            <div>
+                <label>Email :</label> <input name='email'type="email">
+            </div>
+            <div>
+                <label>Password :</label> <input name='password'type="password">
+            </div>
+            <div>
+                <label>Age :</label> <input name='age' type="text">
+            </div>
+           
+            <div> 
+             <label> country:</label>
+                    <select name="country" id="speed" style="color:rgba(0, 0, 0, 0.59);">
+                      <option >Egypt</option>
+                      
+                      <option>USA</option>
+                    </select>
+
+            </div>
+            <br>
+            <div id='en' class=" button">Other</div>
+            <div   class="toggle"id="wall"style="position: relative">
+            <p>
+              <!--<label> Other:</label>-->
+              <input id='data' type="text">
+            </p>     
+
+            <p>
+            <div class='button' id='set' style="position: absolute;
+            top: 6px;
+            left: 228px;
+            padding: 9px;
+            border-radius: 0;">Get value</div>
+
+
+            </div>
+            <div>
+            <p>
+              <button id='submit'class="submit button">Submit</button>
+
+             </p>
+            </div>
+    </form>
+    
+</div>
+    
+    <script>
+//        var btn = document.getElementsByTagName('form')
+        var fname = document.querySelector("input[name='name']");
+        var fage = document.querySelector("input[name='name']");
+        var fpass = document.querySelector("input[name='password']");
+        var femail = document.querySelector("input[name='email']");
+       function validation(){
+            var Uname  = fname.value;
+            var Uage   = fage.value;
+            var Uemail = femail.value;
+            var Upass = fpass.value;
+            if(Uname=="" || Uage=="" || Uemail=="" || Upass==""){
+                alert("error ")
+                return false;
+            }
+        
+        }
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+<script type="text/javascript" src="js/jquery-3.2.1.min.js">>
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
